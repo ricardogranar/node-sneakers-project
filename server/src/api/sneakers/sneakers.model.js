@@ -6,8 +6,10 @@ const sneakerSchema = new mongoose.Schema(
     // Required: si es un campo obligatorio
     // Trim: elimina los espacios al principio y final
     {
+        id: { type: Number, required: true, trim: true },
         brand: { type: String, required: true, trim: true },
-        model: { type: String, required: false, trim: true }
+        model: { type: String, required: false, trim: true },
+        img: {type: String, required: false, trim: true }
     },
     // Timestamps: fecha de creación - modificación
     {
